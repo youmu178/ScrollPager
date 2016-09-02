@@ -1,7 +1,9 @@
 # ScrollPager
 利用ViewPager实现每个Fragment的翻转
 ##DEMO
-![]()
+![](https://raw.githubusercontent.com/youmu178/ScrollPager/master/scrollpager.gif)
+
+代码有注释，很好理解
 ###[首先理解ViewPager动画的实现原理](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0115/2314.html)
 从3.0开始，ViewPager开始支持自定义切换动画，暴露的接口为PageTransformer，因此只要实现PageTransformer接口和其唯一的方法transformPage(View view, float position)即可。
 ```java
@@ -23,3 +25,4 @@ public interface PageTransformer {
 position ==  0 ：当前界面位于屏幕中心的时候
 position ==  1 ：当前Page刚好滑出屏幕右侧
 position == -1 ：当前Page刚好滑出屏幕左侧
+
